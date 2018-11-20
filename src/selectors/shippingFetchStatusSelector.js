@@ -1,5 +1,6 @@
-import { createSelector } from 'reselect'
+import { createSelector } from 'reselect';
+
 export const shippingFetchStatusSelector = createSelector(
-   state=>state.get(`shippingFetchStatus`),
-   shippingFetchStatus=>shippingFetchStatus
-)
+  state => state.get('shippingFetchStatus'),
+  shippingFetchStatus => shippingFetchStatus,
+);

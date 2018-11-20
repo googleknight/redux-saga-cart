@@ -1,5 +1,6 @@
-import { createSelector } from 'reselect'
+import { createSelector } from 'reselect';
+
 export const shippingCostSelector = createSelector(
-   state=>state.get(`shippingCost`),
-   shippingCost=>shippingCost
-)
+  state => state.get('shippingCost'),
+  shippingCost => shippingCost,
+);

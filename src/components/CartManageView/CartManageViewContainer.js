@@ -1,26 +1,22 @@
-import { connect } from 'react-redux'
-import {
-    CartManageViewDisplay
-} from './CartManageViewDisplay';
+import { connect } from 'react-redux';
+import { CartManageViewDisplay } from './CartManageViewDisplay';
 
 import {
-    
-} from './../../actions'
+
+} from './../../actions';
 
 import {
-    
-} from './../../selectors'
 
-const mapStateToProps = (state) => {
-    return {
-        
-    }
-};
-const mapDispatchToProps = (dispatch) => ({
-    
+} from './../../selectors';
+
+const mapStateToProps = state => ({
+
+});
+const mapDispatchToProps = dispatch => ({
+
 });
 
 export const CartManageViewContainer = connect(
-    mapStateToProps,
-    mapDispatchToProps
+  mapStateToProps,
+  mapDispatchToProps,
 )(CartManageViewDisplay);
