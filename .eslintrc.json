@@ -1,6 +1,6 @@
 {
     "extends": "airbnb",
-    "plugins": [
-      "babel"
-    ]
+    "rules":{
+      "import/prefer-default-export": 0
+    }
 }
