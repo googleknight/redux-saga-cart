@@ -12,6 +12,7 @@ import createSagaMiddleWare from 'redux-saga';
 import { getQuery } from './utility';
 import { reducer } from './combineReducers';
 import { defaultState } from './defaultState';
+import { initSagas } from './initSagas';
 
 const stateTransformer = (state) => {
   if (Iterable.isIterable(state)) return state.toJS();
@@ -34,5 +35,6 @@ export const getStore = () => {
     enhancer,
   );
   console.info('Saga Middleware implemented.');
+  initSagas(sagaMiddleWare);
   return store;
 };
