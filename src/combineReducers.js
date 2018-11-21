@@ -1,5 +1,6 @@
-import * as reducers from './reducers';
 import { fromJS } from 'immutable';
+import * as reducers from './reducers';
+
 
 export const combineReducers = (config) => {
   const defaultState = fromJS(Object.keys(config).reduce((a, key) => { a[key] = config[key](undefined, []); return a; }, {}));
