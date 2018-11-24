@@ -1,5 +1,5 @@
 export const connect = () => {
-  const io = window.io;
+  const { io } = window;
   const socket = io();
   return socket;
 };
